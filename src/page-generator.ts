@@ -53,12 +53,12 @@ function writeConfigFiles(directory: string, wizardState: WizardState) {
   fs.writeFileSync(
     path.join(directory, "theme.config.jsx"),
     `export default {
-      logo: <span>${wizardState.title} - made with Lumentis</span>,
+      logo: <span>${wizardState.title} </span>,
       editLink: {
         component: null,
       },
       project: {
-        link: "https://github.com/hrishioa/lumentis",
+        link: "https://github.com/sauravtom",
       },
       feedback: {
         content: null,
@@ -67,8 +67,8 @@ function writeConfigFiles(directory: string, wizardState: WizardState) {
         text: (
           <>
             Made with 🫶 by&nbsp;
-            <a href="https://twitter.com/hrishioa" target="_blank">
-              Hrishi - say hi!
+            <a href="https://twitter.com/aimlbigdata" target="_blank">
+              Saurav - say hi!
             </a>
           </>
         ),
@@ -140,7 +140,7 @@ setTimeout(() => {
   // prettier-ignore
   fs.writeFileSync(
     path.join(directory, "README.md"),
-    `## ${wizardState.title} - made with Lumentis
+    `## ${wizardState.title} 
 
 \`curl -fsSL https://bun.sh/install | bash # Install bun for macOS, Linux, and WSL\`
 
